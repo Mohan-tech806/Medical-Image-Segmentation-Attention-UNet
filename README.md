@@ -1,91 +1,196 @@
-# Medical Image Segmentation using Attention-Enhanced U-Net
+## \# Medical Image Segmentation using Attention-Enhanced U-Net
 
-This project focuses on automatic skin-lesion segmentation using the ISIC 2018 Task 1 dataset.
+## 
 
-Three U-Net based models were implemented and compared:
+## This project focuses on automatic skin-lesion segmentation using the ISIC 2018 Task 1 dataset.
 
-1. Baseline U-Net
-2. U-Net + CBAM
-3. U-Net + SimAM
+## 
 
-## Dataset
+## Three U-Net based models were implemented and compared:
 
-- Dataset: ISIC 2018 Task 1
-- Total image-mask pairs: 2,594
-- Image size: 256 × 256
-- Train: 80%
-- Validation: 10%
-- Test: 10%
+## 
 
-## Methodology
+## 1\. Baseline U-Net
 
-The project first implements a standard U-Net as a baseline model. Two attention-based variants are then developed to improve feature representation and lesion localization.
+## 2\. U-Net + CBAM
 
-### Baseline U-Net
+## 3\. U-Net + SimAM
 
-A standard encoder-decoder U-Net architecture with skip connections was implemented.
+## 
 
-- Loss: Binary Cross-Entropy + Dice Loss
-- Optimizer: Adam
-- Learning Rate: 1e-4
-- Batch Size: 16
-- Maximum Epochs: 50
+## \## Dataset
 
-**Results:**
-- Dice: 0.8625
-- IoU: 0.7596
-- Loss: 0.3254
+## 
 
-### U-Net + CBAM
+## \- Dataset: ISIC 2018 Task 1
 
-CBAM (Convolutional Block Attention Module) was added to improve channel and spatial feature attention.
+## \- Total image-mask pairs: 2,594
 
-**Results:**
-- Dice: 0.8712
-- IoU: 0.7744
-- Loss: 0.3197
+## \- Image size: 256 × 256
 
-### U-Net + SimAM
+## \- Train: 80%
 
-SimAM (Simple Attention Module) was incorporated at the bottleneck of U-Net. SimAM is a parameter-free attention mechanism.
+## \- Validation: 10%
 
-**Results:**
-- Dice: 0.8778
-- IoU: 0.7830
-- Loss: 0.2906
+## \- Test: 10%
 
-## Results Comparison
+## 
 
-| Model | Dice | IoU | Loss |
-|---|---:|---:|---:|
-| U-Net | 0.8625 | 0.7596 | 0.3254 |
-| U-Net + CBAM | 0.8712 | 0.7744 | 0.3197 |
-| U-Net + SimAM | 0.8778 | 0.7830 | 0.2906 |
+## \## Methodology
 
-SimAM achieved the best performance among the three models.
+## 
 
-## Evaluation
+## The project first implements a standard U-Net as a baseline model. Two attention-based variants are then developed to improve feature representation and lesion localization.
 
-The models were evaluated using:
+## 
 
-- Dice Coefficient
-- Intersection over Union (IoU)
-- Test Loss
+## \### Baseline U-Net
 
-The notebooks also include training curves and visual comparisons between the original image, ground-truth mask, and predicted segmentation mask.
+## 
 
+## A standard encoder-decoder U-Net architecture with skip connections was implemented.
 
+## 
 
-## Technologies Used
+## \- Loss: Binary Cross-Entropy + Dice Loss
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
+## \- Optimizer: Adam
 
-## Key Takeaway
+## \- Learning Rate: 1e-4
 
-Attention-enhanced U-Net models improved segmentation performance compared with the baseline U-Net, with U-Net + SimAM achieving the highest Dice and IoU scores.
+## \- Batch Size: 16
+
+## \- Maximum Epochs: 50
+
+## 
+
+## \*\*Test Results:\*\*
+
+## \- Dice: 0.8589
+
+## \- IoU: 0.7542
+
+## \- Loss: 0.3208
+
+## 
+
+## \### U-Net + CBAM
+
+## 
+
+## CBAM (Convolutional Block Attention Module) was added to improve channel and spatial feature attention.
+
+## 
+
+## \*\*Test Results:\*\*
+
+## \- Dice: 0.8712
+
+## \- IoU: 0.7744
+
+## \- Loss: 0.3197
+
+## 
+
+## \### U-Net + SimAM
+
+## 
+
+## SimAM (Simple Attention Module) was incorporated at the bottleneck of U-Net. SimAM is a parameter-free attention mechanism.
+
+## 
+
+## \*\*Test Results:\*\*
+
+## \- Dice: 0.8778
+
+## \- IoU: 0.7830
+
+## \- Loss: 0.2906
+
+## 
+
+## \## Results Comparison
+
+## 
+
+## | Model | Dice | IoU | Loss |
+
+## |---|---:|---:|---:|
+
+## | U-Net | 0.8589 | 0.7542 | 0.3208 |
+
+## | U-Net + CBAM | 0.8712 | 0.7744 | 0.3197 |
+
+## | U-Net + SimAM | 0.8778 | 0.7830 | 0.2906 |
+
+## 
+
+## U-Net + SimAM achieved the best performance among the three models.
+
+## 
+
+## \## Evaluation
+
+## 
+
+## The models were evaluated using:
+
+## 
+
+## \- Dice Coefficient
+
+## \- Intersection over Union (IoU)
+
+## \- Test Loss
+
+## 
+
+## The notebooks also include training curves and visual comparisons between the original image, ground-truth mask, and predicted segmentation mask.
+
+## 
+
+## \## Project Structure
+
+## 
+
+## Medical-Image-Segmentation-Attention-UNet/
+
+## │
+
+## ├── README.md
+
+## ├── 01\_baseline\_unet.ipynb
+
+## ├── 02\_unet\_cbam.ipynb
+
+## └── 03\_unet\_simam.ipynb
+
+## 
+
+## \## Technologies Used
+
+## 
+
+## \- Python
+
+## \- TensorFlow
+
+## \- Keras
+
+## \- NumPy
+
+## \- Pandas
+
+## \- Matplotlib
+
+## \- Scikit-learn
+
+## 
+
+## \## Key Takeaway
+
+## 
+
+## Attention-enhanced U-Net models improved segmentation performance compared with the baseline U-Net, with U-Net + SimAM achieving the highest Dice and IoU scores.
+
