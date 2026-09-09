@@ -66,6 +66,8 @@
 
 ## \*\*Test Results:\*\*
 
+## 
+
 ## \- Dice: 0.8589
 
 ## \- IoU: 0.7542
@@ -84,6 +86,8 @@
 
 ## \*\*Test Results:\*\*
 
+## 
+
 ## \- Dice: 0.8712
 
 ## \- IoU: 0.7744
@@ -101,6 +105,8 @@
 ## 
 
 ## \*\*Test Results:\*\*
+
+## 
 
 ## \- Dice: 0.8778
 
@@ -154,17 +160,17 @@
 
 ## 
 
-## Medical-Image-Segmentation-Attention-UNet/
+## &#x20;   Medical-Image-Segmentation-Attention-UNet/
 
-## │
+## &#x20;   │
 
-## ├── README.md
+## &#x20;   ├── README.md
 
-## ├── 01\_baseline\_unet.ipynb
+## &#x20;   ├── 01\_baseline\_unet.ipynb
 
-## ├── 02\_unet\_cbam.ipynb
+## &#x20;   ├── 02\_unet\_cbam.ipynb
 
-## └── 03\_unet\_simam.ipynb
+## &#x20;   └── 03\_unet\_simam.ipynb
 
 ## 
 
